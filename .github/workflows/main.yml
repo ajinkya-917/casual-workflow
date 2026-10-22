@@ -1,0 +1,12 @@
+name: Schedule jobs
+on:
+  schedule:
+    - cron: 0 0 * * *
+jobs:
+  run-script: null
+  runs-on: ubuntu-latest
+  steps:
+    - name: Print Message
+      run: echo "schedule first workflow"
+    
+    
